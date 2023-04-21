@@ -18,6 +18,8 @@ from invesuite import number_of_digit
         pytest.param("000", 1, id="special zero in str"),
         (10j, 1),
         (13 + 4j, 2),
+        (-1, 2),
+        (-13 + 4j, 3),
     ],
 )
 def test_number_of_digit(in_, out):
